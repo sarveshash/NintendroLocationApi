@@ -1,6 +1,4 @@
-from flask import Flask, jsonify, request
 
-app = Flask(__name__)
 
 locations = {
   "locations": {
@@ -48,11 +46,4 @@ locations = {
   }
 }
 
-# Define a route to return the full data
-@app.route('/locations', methods=['GET'])
-def get_all_locations():
-    return jsonify(locations)
-
-# Run the Flask app
-if __name__ == '__main__':
-    app.run(debug=True)
+ 
